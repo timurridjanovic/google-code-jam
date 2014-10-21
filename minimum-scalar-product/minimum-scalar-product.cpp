@@ -44,7 +44,7 @@ long int handle_vectors(string v1, string v2, string n) {
 }
 
 void write_to_file(long int product, int test_case) {
-    ofstream file("result_vectors_large_cpp.txt", ios::out | ios::app);
+    ofstream file("result_minimum_scalar_product.txt", ios::out | ios::app);
     if (file.is_open()) {
         file << "Case #" << test_case << ": " << product << "\n";
         file.close();
